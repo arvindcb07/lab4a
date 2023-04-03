@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<title>JAVASCRIPTCALCULATOR</title>
+<script>
+    function add()
+    {
+        var one,two,sum;
+        one=parseInt(document.getElementById("first").value);
+        two=parseInt(document.getElementById("second").value);
+        sum=one+two;
+        document.getElementById("sum").value=sum;
+    }
+    function sub()
+    {
+        var one,two,sum;
+        one=parseInt(document.getElementById("first").value);
+        two=parseInt(document.getElementById("second").value);
+        sum=one-two;
+        document.getElementById("sum").value=sum;
+    }
+    function mul()
+    {
+        var one,two,sum;
+        one=parseInt(document.getElementById("first").value);
+        two=parseInt(document.getElementById("second").value);
+        sum=one*two;
+        document.getElementById("sum").value=sum;
+    }
+ function div()
+    {
+        var one,two,sum;
+        one=parseInt(document.getElementById("first").value);
+        two=parseInt(document.getElementById("second").value);
+        sum=one/two;
+        document.getElementById("sum").value=sum;
+    }
+ 
+</script>
+<style>
+    body{
+        background-color: white;
+    }
+    .no4{
+        text-align: center;
+        color: rgb(117, 130, 142);
+    }
+    .no3{
+        color: rgb(241, 241, 245);
+        background-color: blue;
+        width: 10px;
+        height: 40px;
+        padding: 4px 20px;
+        margin-left: 5%;
+        align-items: center;
+        border-color: white;
+        font-size: larger;
+       
+    }
+    .no2{
+        color: rgb(241, 241, 245);
+        background-color: blue;
+        width: 10px;
+        height: 40px;
+        padding: 4px 20px;
+        margin-left: 5%;
+        align-items: center;
+        border-color: white;
+        font-size: larger;
+       
+    }
+    .no1{
+        color: rgb(241, 241, 245);
+        background-color: blue;
+        width: 10px;
+        height: 40px;
+        padding: 4px 20px;
+        margin-left: 5%;
+        align-items: center;
+        border-color: white;
+        font-size: larger;
+       
+    }
+
+
+
+</style>
+</head>
+<body>
+
+    <h1 class="no4"><font color="red">CALCULATOR</fornt></h1>
+    <h3> Enter the first number :<input  id="first"></h3><br>
+    <h3>Enter the second number :<input  id="second"></h3><br>
+    <button class="no3" onclick="add()">+</button>
+
+    <button class="no2" onclick="sub()">-</button>
+    <button class="no1" onclick="mul()">*</button>
+    <button class="no1" onclick="div()">/</button>
+   
+    <h3> sum value is :<input id="sum"></h3>
+
+
+</body>
+</html>ll
